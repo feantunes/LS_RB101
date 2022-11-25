@@ -1,0 +1,12 @@
+Locate the ruby documentation for methods 
+File::path and File#path. How are they different?
+
+Answer:
+File::path is a Class Method that returns the string representation of the path
+File.path('path') -> string 'path'
+We need to use a Class Method directly on the class, like this example File.path
+
+File#path is an Instance Method that returns the pathname 
+used to create file as a string. Does not normalize the name
+File.new("testfile").path -> 'testfile'
+Instance methods are called on the objects.
