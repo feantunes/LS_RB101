@@ -1,0 +1,62 @@
+START = A method that returns the sum of two integers
+SET   = integer_1, integer_2 and result
+GET   = get input from user = integer_1 and integer_2
+PRINT = display the chosen numbers to user
+LOGIC = integer_1 + integer_2
+WHILE = no loop
+END   = display result and end.
+-------------------------------
+START = method that takes an array of strings and returns a string concatned
+SET = string and new_string
+GET = get string from user 
+PRINT = display the chosen string
+LOGIC = use the Array#join method on the string and assign to new_string
+WHILE = no loop
+END = display new_string and end. 
+-------------------------------
+START = method takes an array of integers and returns new array with every
+other element from the array, starting with the first element
+SET = array and new_array
+GET = get array from user
+PRINT = display the chosen array to user
+LOGIC = use Array#select if Array[x].is_even? and assign to new_array
+WHILE = no loop
+END = display new_array
+-------------------------------
+START: a method that determines the index of the 3rd occurrence of a given character
+in a string. For instance, if the given character is 'x' and the string is
+'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). 
+If the given character does not occur at least 3 times, return nil.
+SET = user_string, string_index, chosen_char, index_counter = 1
+GET = get user_string and chosen_char
+PRINT = print user_string and chosen_char
+LOGIC = until index_counter == 3
+          if user_string.index(chosen_char, string_index)
+          string_index = user_string(chosen_char)
+          index_counter+= 1
+          else
+          nil
+          end
+        end
+END = display string_index
+---------------------------------
+a method that takes two arrays of numbers and returns the result of merging
+the arrays. The elements of the first array should become the elements at 
+the even indexes of the returned array, while the elements of the second
+array should become the elements at the odd indexes. Example:
+
+merge([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
+
+SET = new_merged_array, array_length
+GET = get two array inputs from user
+PRINT = display the two arrays to user
+LOGIC = # array1[0]array2[0],array1[1], array2[1] ..
+      counter = 0
+      while new_array.length < array1.length + array2.length
+      new_array << array1[counter]
+      new_array << array2[counter]
+      end
+END = display new_array to user
+-------------------------------------
+      
+      
